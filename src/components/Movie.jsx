@@ -13,6 +13,7 @@ export default function Movie() {
 
 	let fetching = false;
 
+	// eslint-disable-next-line
 	const fetchMovie = useCallback(async () => {
 		if (fetching) {
 			return;
@@ -35,6 +36,7 @@ export default function Movie() {
 	});
 	useEffect(() => {
 		fetchMovie();
+		// eslint-disable-next-line
 	}, []);
 
 	return (

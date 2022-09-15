@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
 import "./MoviesList.css";
 import "./MovieSearch.css";
@@ -38,6 +38,7 @@ export default function MoviesList({ movies }) {
 	}
 
 	useEffect(() => {
+		// eslint-disable-next-line
 		fetching = true;
 		setFilteredMovies([]);
 		setPageNumber(1);

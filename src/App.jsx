@@ -5,7 +5,6 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import RedirectToMovie from "./components/RedirectToMovie";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
 import { Typography, CircularProgress } from "@mui/material";
 import Loadable from "react-loadable";
 

@@ -66,6 +66,7 @@ export default function Slider({ genreId, genreName }) {
 		],
 	};
 
+	// eslint-disable-next-line
 	const fetchItems = useCallback(async () => {
 		if (fetching) {
 			return;
@@ -93,6 +94,7 @@ export default function Slider({ genreId, genreName }) {
 	useEffect(() => {
 		setFilteredMovies([]);
 		fetchItems();
+		// eslint-disable-next-line
 	}, []);
 
 	return (

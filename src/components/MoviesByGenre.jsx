@@ -37,6 +37,7 @@ export default function MoviesList() {
 
 	let fetching = false;
 
+	// eslint-disable-next-line
 	const fetchItems = useCallback(async () => {
 		if (fetching) {
 			return;
@@ -70,6 +71,7 @@ export default function MoviesList() {
 		setFilteredMovies([]);
 		setPageNumber(1);
 		fetchItems();
+		// eslint-disable-next-line
 	}, [rating]);
 
 	return (

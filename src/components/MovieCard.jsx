@@ -11,7 +11,7 @@ import {
 	Skeleton,
 } from "@mui/material";
 import "./MovieCard.css";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useQuery } from "react-query";
@@ -76,12 +76,7 @@ export default function MovieCard({ id }) {
 		}
 	);
 
-	const {
-		isLoading: logoIsLoading,
-		isError: logoIsError,
-		data: logo,
-		error: logoError,
-	} = useQuery(
+	const { data: logo } = useQuery(
 		["l" + id, movie],
 		async () => {
 			let url = movie.images.logos.find(
