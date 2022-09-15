@@ -1,7 +1,6 @@
 import "./Movie.css";
 import "./Home.css";
 import axios from "axios";
-import CircularProgress from "@mui/material/CircularProgress";
 import { useCallback, useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
@@ -38,6 +37,7 @@ export default function Home() {
 
 	let fetching = false;
 
+	// eslint-disable-next-line
 	const fetchItems = useCallback(async () => {
 		if (fetching) {
 			return;
@@ -79,9 +79,9 @@ export default function Home() {
 			fetching = false;
 		}
 	});
-
 	useEffect(() => {
 		fetchItems();
+		// eslint-disable-next-line
 	}, []);
 
 	return (
