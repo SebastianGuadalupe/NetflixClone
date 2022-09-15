@@ -1,0 +1,39 @@
+.slider {
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick-slider {
+  margin: 0 5rem;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  height: 10vw !important;
+  overflow: visible !important;
+}
+
+.slick-slide div .movie-card {
+  width: fit-content;
+  max-width: unset;
+}
+
+.slick-slide div .movie-card .movie-backdrop {
+  height: 10vw !important;
+  width: fit-content;
+}
+
+
+.slick-slide {
+  height: 10vw !important;
+  padding: .25rem;
+}
+
+.slick-arrow {
+  z-index: 50;
+}

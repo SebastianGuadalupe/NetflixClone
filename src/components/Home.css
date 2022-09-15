@@ -1,0 +1,45 @@
+:root {
+  --video-width: 100vw;
+  --video-height: 56.25vw;
+}
+
+.backdrop {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 35vw;
+  mask: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.backdrop iframe, .backdrop-loading {
+  width: var(--video-width);
+  height: var(--video-height);
+  display: block;
+  margin: auto;
+}
+
+.backdrop-info {
+  position: absolute;
+  top: 20vw;
+  left: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.backdrop-info img {
+  width: 20vw;
+}
+
+.info-buttons {
+  display: flex;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  :root {
+      --video-width: 177.7vw;
+      --video-height: 100vw;
+  }
+  .backdrop {
+    height: 50vw;
+  }
+}

@@ -1,0 +1,10 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.search .MuiTextField-root {
+  width: 50%;
+}

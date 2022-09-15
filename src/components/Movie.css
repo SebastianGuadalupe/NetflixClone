@@ -1,0 +1,52 @@
+:root {
+  --video-width: 100vw;
+  --video-height: 60vh;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  :root {
+      --video-height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  :root {
+      --video-width: 177.78vh;
+  }
+}
+
+.backdrop {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 60vh;
+  max-width:100%;
+  mask: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0), 50%);
+}
+
+.backdrop iframe {
+  width: var(--video-width);
+  height: var(--video-height);
+  position: relative;
+  transform: translateY(-10rem);
+}
+
+.Movie {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  margin: 3rem;
+  position: relative;
+  transform: translateY(-10rem);
+}
+
+.info {
+  display: flex;
+}
+
+.info div img {
+  height: 25vh;
+  margin: 0 3rem;
+}
